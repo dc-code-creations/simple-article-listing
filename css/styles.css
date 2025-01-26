@@ -1,5 +1,24 @@
 /* FONTS */
+/* .poppins-heading {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  font-style: normal;
+}
 
+.poppins-small-heading {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-style: normal;
+}
+
+.poppins-small-text {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  font-style: normal;
+} */
 
 /* STYLES */
 * {
@@ -24,6 +43,17 @@ body {
 }
 
 /* HEADER */
+.header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  /* same as small header b/c I used an <h1> here and an <h3> there */
+  font-size: 1.25rem;
+  font-style: normal;
+}
 
 /* HORIZONTAL RULE */
 
@@ -40,11 +70,23 @@ body {
   margin-right: 1rem;
 }
 
+.article-title {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-style: normal;
+}
+
 .article-txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 1rem;
+
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  font-style: normal;
 }
 
 /* RESPONSIVE STYLES */
