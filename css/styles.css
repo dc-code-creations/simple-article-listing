@@ -29,6 +29,7 @@
 
 body {
   height: 100vh;
+  min-width: 200px;
 }
 
 .author-info {
@@ -43,7 +44,7 @@ body {
 }
 
 /* HEADER */
-.header{
+.header {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -81,7 +82,7 @@ body {
 .article-title {
   font-family: "Poppins", serif;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
 }
 
@@ -101,9 +102,43 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  body {
+    background-color: pink;
+  }
+
+  .header {
+    font-size: 1rem;
+  }
+  .article-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .article-card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    margin-right: 0;
+  }
+
+  .article-txt-section {
+    padding: 1rem;
+  }
+
+  .article-title {
+    font-size: 1.15rem;
+  }
+}
+
 @media (min-width: 460px) {
   body {
     background-color: purple;
+  }
+
+  .article-title {
+    /* font-size: 1.25rem; */
   }
 }
 
