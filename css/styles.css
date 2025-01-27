@@ -72,8 +72,9 @@ body {
 
 #slashes-svg::before {
   /* option 1 */
-  content: "";
-    top: 10px;
+  content: '';
+  /* content: url('../images/Seperator.svg'); */
+  top: 10px;
   position: absolute;
   background: grey;
   height: 1px;
@@ -83,36 +84,41 @@ body {
   /* option 2 */
   /* display: inline-flex;
   content: '';
-  background-image: url('../images/Seperator.svg');
-  background-size: 40px 40px;
-  height: 40px;
-  width: 40px; */
+  background-image: url('../images/Seperator.svg'); */
+  /* background-size: 40px 40px; */
+  /* height: 40px; */
+  /* width: 40px; */
 }
 
 #slashes-svg::after {
   /* option 1 */
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   content: url('../images/Seperator.svg');
+  display: block; */
+
   /* content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="var(--bs-warning)" class="bi bi-hearts" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.931.481c1.627-1.671 5.692 1.254 0 5.015-5.692-3.76-1.626-6.686 0-5.015m6.84 1.794c1.084-1.114 3.795.836 0 3.343-3.795-2.507-1.084-4.457 0-3.343M7.84 7.642c2.71-2.786 9.486 2.09 0 8.358-9.487-6.268-2.71-11.144 0-8.358"/></svg>'); */
-  display: block;
   /* background: white; */
   /* background: black; */
   /* width: 30px; */
 
   /* option 2 */
-  /* display: inline-flex;
+  display: inline-flex;
+  /* display: inline-block; */
   content: '';
-  background-image: url('../images/Seperator.svg');
-  background-size: 40px 40px;
-  height: 40px;
-  width: 40px;
+  background: url('../images/Seperator.svg') no-repeat center;
+  /* top: -10px; */
+  background-size: 200px 40px;
+  /* height: 100px; */
+  /* width: 40px; */
+  height: 100%;
+  width: 100%;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  text-align: center;
 }
 
 /* ARTICAL CARDS */
