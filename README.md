@@ -48,8 +48,21 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 What I did:
 - started by creating mobile version first, then worked my 
-  way up to larger sizes
+  way up to larger sizes; found color coding the size I'm working with helps me keep track of which size I'm affecting
 - learn how to use an svg as a horizontal rule/separator
+- decided it's best to use bootstrap breakpoints for screen sizes as a starting point since my natural breakpoints ended up being pretty close to those breakpoints anyway
+- reminder: font sizes are affected by the element's base font size when using rem, so the assigned font size for an <h1> might be the same as the one for an <h3>, but their physical sizes will be different
+- I need more practice with media queries just so I don't have to go an remind myself how they work everytime
+- set a min-width on the body at the point where the elements start trying to push past the widest element on the page (using a css debugger extensions helps with this; just click the toggle device toolbar button the in inspector to reset the page once you've added the min-width to the body)
+
+Element Misalignment w/ No Min-Width Defined
+![screenshot](images/element-misalignment.png)
+
+Element Alignment Correction Via Min-Width Definition
+![screenshot](images/element-misalignment-corrected.png)
+
+Toggle Device Toolbar Button in Inspector
+![screenshot](images/toggle-device-toolbar-btn.png)
 -->
 
 ### What I learned
