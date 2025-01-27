@@ -63,6 +63,13 @@ Element Alignment Correction Via Min-Width Definition
 
 Toggle Device Toolbar Button in Inspector
 ![screenshot](images/toggle-device-toolbar-btn.png)
+
+- figure out how to use an svg as a <hr>; these articles seem to be the most recent and therefore up-to-date:
+      - https://forum.bootstrapstudio.io/t/create-a-hr-with-an-icon-inside/11669 (works but had to remove the 'width: 30px' in the ::after psuedoclass... and make sure I was pointing to the correct file location; can either choose to apply it to ::before and translate backwards or apply it to ::after and translate forwards)
+            - https://www.geeksforgeeks.org/how-to-use-svg-with-before-or-after-pseudo-element/ (this article shows what is physically a happening for each psuedoclass a bit better, so it was easier to visualize this way, but it uses the background image property, which I don't think works unless there is an actual element in the content field, so may work if you add spaces)
+      - https://www.sarasoueidan.com/blog/horizontal-rules/#:~:text=The%20best%20way%20to%20get%20the%20full%20flexibility%20of%20an%20SVG%20is%20by%20inlining%20it (this article talks about using an svg as a <hr> and keeping it accessible using ARIA (Accessibility Rich Internet Applications), but I have not gotten this to work for me yet)
+
+-
 -->
 
 ### What I learned
