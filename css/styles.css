@@ -82,8 +82,8 @@ body {
   width: 100%;
   -webkit-mask: url('../images/Separator.svg') no-repeat 50% 50%;
   mask: url('../images/Seperator.svg') no-repeat 50% 50%;
-  -webkit-mask-size: contain;
-  mask-size: contain;
+  /* -webkit-mask-size: contain;
+  mask-size: contain; */
 }
 
 /* option 4 */
