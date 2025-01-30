@@ -66,8 +66,7 @@ body {
 
 /* this is the class/id you add to the <hr> element */
 .slashes-svg {
-  /* option 1, option 2, & option 3 */
-  /* border-color: #D9D9D9; */
+  /* option 1, option 2, option 3, & option 4 */
   position: relative;
   border-top: 0;
   border: 0;
@@ -75,14 +74,14 @@ body {
   opacity: 1;
 
 
-  /* option 4 - positioning not quite right yet */
-  /* display: inline-block;
+  /* option 4 */
+  display: inline-flex;
   content: '';
-  width: 50%;
+  width: 100%;
   -webkit-mask: url('../images/Separator.svg') no-repeat 50% 50%;
   mask: url('../images/Seperator.svg') no-repeat 50% 50%;
   -webkit-mask-size: contain;
-  mask-size: contain; */
+  mask-size: contain;
   /* height: 50%; */
 }
 
@@ -93,25 +92,25 @@ body {
 }
 
 .slashes-svg::before {
-  /* option 1 */
+  /* option 1 - NOT NECESSARY FOR WHAT WE ARE TRYING TO DO; this was if you wanted icons on either side of the horizontal rule line */
   /* content: ''; */
-  /* content: url('../images/Seperator.svg'); */
-  /* top: 10px;
+  /* background: grey; */
+  /* content: url('../images/Seperator.svg');
+  top: 10px;
   position: absolute;
-  background: grey;
   height: 1px;
   width: 100%;
   display: block; */
 
   /* option 3 */
-  display: inline-block;
-  content: '';
   /* background-image: url('../images/Seperator.svg'); */
   /* background-size: 40px 40px; */
+  /* display: inline-flex;
+  content: '';
   height: 100%;
   width: 100%;
   background: var(--c);
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg width="180" height="16" viewBox="0 0 180 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8.9917" y="0.284912" width="2" height="16" transform="rotate(24 8.9917 0.284912)" fill="%23D9D9D9"/><rect x="17.3267" y="0.284912" width="2" height="16" transform="rotate(24 17.3267 0.284912)" fill="%23D9D9D9"/><rect x="25.6614" y="0.284912" width="2" height="16" transform="rotate(24 25.6614 0.284912)" fill="%23D9D9D9"/><rect x="33.9963" y="0.284912" width="2" height="16" transform="rotate(24 33.9963 0.284912)" fill="%23D9D9D9"/><rect x="42.3313" y="0.284912" width="2" height="16" transform="rotate(24 42.3313 0.284912)" fill="%23D9D9D9"/><rect x="50.666" y="0.284912" width="2" height="16" transform="rotate(24 50.666 0.284912)" fill="%23D9D9D9"/><rect x="59.001" y="0.284912" width="2" height="16" transform="rotate(24 59.001 0.284912)" fill="%23D9D9D9"/><rect x="67.3359" y="0.284912" width="2" height="16" transform="rotate(24 67.3359 0.284912)" fill="%23D9D9D9"/><rect x="75.6707" y="0.284912" width="2" height="16" transform="rotate(24 75.6707 0.284912)" fill="%23D9D9D9"/><rect x="84.0056" y="0.284912" width="2" height="16" transform="rotate(24 84.0056 0.284912)" fill="%23D9D9D9"/><rect x="92.3403" y="0.284912" width="2" height="16" transform="rotate(24 92.3403 0.284912)" fill="%23D9D9D9"/><rect x="100.675" y="0.284912" width="2" height="16" transform="rotate(24 100.675 0.284912)" fill="%23D9D9D9"/><rect x="109.01" y="0.284912" width="2" height="16" transform="rotate(24 109.01 0.284912)" fill="%23D9D9D9"/><rect x="117.345" y="0.284912" width="2" height="16" transform="rotate(24 117.345 0.284912)" fill="%23D9D9D9"/><rect x="125.68" y="0.284912" width="2" height="16" transform="rotate(24 125.68 0.284912)" fill="%23D9D9D9"/><rect x="134.015" y="0.284912" width="2" height="16" transform="rotate(24 134.015 0.284912)" fill="%23D9D9D9"/><rect x="142.35" y="0.284912" width="2" height="16" transform="rotate(24 142.35 0.284912)" fill="%23D9D9D9"/><rect x="150.685" y="0.284912" width="2" height="16" transform="rotate(24 150.685 0.284912)" fill="%23D9D9D9"/><rect x="159.02" y="0.284912" width="2" height="16" transform="rotate(24 159.02 0.284912)" fill="%23D9D9D9"/><rect x="167.354" y="0.284912" width="2" height="16" transform="rotate(24 167.354 0.284912)" fill="%23D9D9D9"/><rect x="175.689" y="0.284912" width="2" height="16" transform="rotate(24 175.689 0.284912)" fill="%23D9D9D9"/></svg>') no-repeat center;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg width="180" height="16" viewBox="0 0 180 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8.9917" y="0.284912" width="2" height="16" transform="rotate(24 8.9917 0.284912)" fill="%23D9D9D9"/><rect x="17.3267" y="0.284912" width="2" height="16" transform="rotate(24 17.3267 0.284912)" fill="%23D9D9D9"/><rect x="25.6614" y="0.284912" width="2" height="16" transform="rotate(24 25.6614 0.284912)" fill="%23D9D9D9"/><rect x="33.9963" y="0.284912" width="2" height="16" transform="rotate(24 33.9963 0.284912)" fill="%23D9D9D9"/><rect x="42.3313" y="0.284912" width="2" height="16" transform="rotate(24 42.3313 0.284912)" fill="%23D9D9D9"/><rect x="50.666" y="0.284912" width="2" height="16" transform="rotate(24 50.666 0.284912)" fill="%23D9D9D9"/><rect x="59.001" y="0.284912" width="2" height="16" transform="rotate(24 59.001 0.284912)" fill="%23D9D9D9"/><rect x="67.3359" y="0.284912" width="2" height="16" transform="rotate(24 67.3359 0.284912)" fill="%23D9D9D9"/><rect x="75.6707" y="0.284912" width="2" height="16" transform="rotate(24 75.6707 0.284912)" fill="%23D9D9D9"/><rect x="84.0056" y="0.284912" width="2" height="16" transform="rotate(24 84.0056 0.284912)" fill="%23D9D9D9"/><rect x="92.3403" y="0.284912" width="2" height="16" transform="rotate(24 92.3403 0.284912)" fill="%23D9D9D9"/><rect x="100.675" y="0.284912" width="2" height="16" transform="rotate(24 100.675 0.284912)" fill="%23D9D9D9"/><rect x="109.01" y="0.284912" width="2" height="16" transform="rotate(24 109.01 0.284912)" fill="%23D9D9D9"/><rect x="117.345" y="0.284912" width="2" height="16" transform="rotate(24 117.345 0.284912)" fill="%23D9D9D9"/><rect x="125.68" y="0.284912" width="2" height="16" transform="rotate(24 125.68 0.284912)" fill="%23D9D9D9"/><rect x="134.015" y="0.284912" width="2" height="16" transform="rotate(24 134.015 0.284912)" fill="%23D9D9D9"/><rect x="142.35" y="0.284912" width="2" height="16" transform="rotate(24 142.35 0.284912)" fill="%23D9D9D9"/><rect x="150.685" y="0.284912" width="2" height="16" transform="rotate(24 150.685 0.284912)" fill="%23D9D9D9"/><rect x="159.02" y="0.284912" width="2" height="16" transform="rotate(24 159.02 0.284912)" fill="%23D9D9D9"/><rect x="167.354" y="0.284912" width="2" height="16" transform="rotate(24 167.354 0.284912)" fill="%23D9D9D9"/><rect x="175.689" y="0.284912" width="2" height="16" transform="rotate(24 175.689 0.284912)" fill="%23D9D9D9"/></svg>') no-repeat center; */
 }
 
 .slashes-svg::after {
@@ -119,9 +118,12 @@ body {
   /* position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  text-align: center;
-  content: url('../images/Seperator.svg');
-  display: block; */
+  content: url('../images/Seperator.svg'); */
+
+  /* NOT NECESSARY FOR OPTION 1 */
+
+  /* text-align: center; */
+  /* display: block; */
 
   /* example of an icon that is input directly to the content property rather than being imported as a static image */
 
