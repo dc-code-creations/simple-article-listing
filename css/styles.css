@@ -233,10 +233,6 @@ body {
     padding: 0 6rem;
   }
 
-  .slashes-svg::after {
-    padding: 3rem;
-  }
-
   /* .header {
     font-size: 1.15rem;
     padding: 3rem 2rem;
