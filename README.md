@@ -108,9 +108,21 @@ Toggle Device Toolbar Button in Inspector
             ```
             - all 4 options use these properties
         - option 1: in either ```::before``` or ```::after``` psuedoclass, set the 'content' property to the svg you want to use (will not be able to change color with out a mask in this case), set ```position``` to absolute, set 'left' to 50%, and translate it 50% back to the left
+
+        https://codepen.io/dc-code-creations/pen/EaYGexW
+
         - option 2: in either ```::before``` or ```::after``` psuedoclass, set the ```display``` to inline-flex or inline-block (doesn't seem to matter which one), ```content``` to an empty string, ```background-image``` to the svg (will not be able to change color with out a mask in this case) with no-repeat and center, ```background-size``` to contain, and both the ```width``` and ```height``` to 100%
+
+        https://codepen.io/dc-code-creations/pen/ogvmVaY
+
         - option 3: very similar to option 2; in either ```::before``` or ```::after``` psuedoclass, set the ```display``` to inline-flex or inline-block (doesn't seem to matter which one), ```content``` to an empty string, and both the ```width``` and ```height``` to 100%; for ```background```, set it to ```var(--c)``` (this is a function used to insert value of a custom property from elsewhere, whether it is the html or js) and ```-webkit-mask``` to the code for the svg itself; in the html, set the ```style``` attribute on the ```<hr>``` to ```style="--c:#D9D9D9"```
+
+        https://codepen.io/dc-code-creations/pen/XJrOGyJ
+
         - option 4: in the initially defined class from above (so no psuedo classes necessary), set the ```display``` to inline-flex or inline-block (doesn't seem to matter which one), ```content``` to an empty string, and ```width``` to 100%; set both ```mask``` and ```-webkit-mask``` to import the svg (image is fine) with it set to 'no-repeat' and the ```position``` set to '50% 50%'; set both the ```mask-size``` and the ```-webkit-mask-size``` to 'contain' (make the image stretch to fill the space without warping the image); then create another class to define the color you want the icon to be (color appears as a result of the mask) and add that class to the ```<hr>```
+
+        https://codepen.io/dc-code-creations/pen/ByBMbGV
+
     - can't really adjust the color for the first 2 options, so color of the icon will need to be written into the SVG image itself; 3rd option works and is dynamic, but hard to adjust if you have multiple ```<hr>``` elements whose colors all need to be changed at the same time
     - I like the 4th option best due to the ability to be able to change the color of multiple ```<hr>``` (that are the same color) by changing the color in the css vs on every individual element; even for ```<hr>``` that need to be a different color, there will still be one place to adjust the color itself as long as it has the correct color class added to its class attribute
 - ```width```: sets the size of the element container relative to the size of the parent conatiner, and any adjustments you try to make relative to the container size will be relative to the ELEMENT's container size, not the parent's; translations will be needed for anything
