@@ -84,6 +84,10 @@ body {
   mask: url('../images/Seperator.svg') no-repeat 50% 50%;
   /* -webkit-mask-size: contain;
   mask-size: contain; */
+
+  /* spacing */
+  margin: 1rem 0;
+
 }
 
 /* option 4 */
@@ -136,6 +140,7 @@ body {
   }
 } */
 
+/* Very small screen sizes */
 @media (max-width: 400px) {
   body {
     background-color: pink;
@@ -167,6 +172,7 @@ body {
   }
 }
 
+/* Large mobile devices and small tablets */
 @media (min-width: 460px) {
   body {
     background-color: purple;
@@ -188,6 +194,7 @@ body {
   }
 }
 
+/* Regular to large tablet sizes */
 @media (min-width: 630px) {
   body {
     background-color: lightblue;
@@ -196,6 +203,11 @@ body {
   .header {
     font-size: 1.15rem;
     padding: 3rem 2rem;
+  }
+
+  .slashes-svg {
+    margin: 0;
+    margin-bottom: 2rem;
   }
 
   .article-card img {
@@ -214,10 +226,15 @@ body {
   }
 }
 
+/* small to medium desktop sizes */
 @media (min-width: 930px) {
   body {
     background-color: green;
     padding: 0 6rem;
+  }
+
+  .slashes-svg::after {
+    padding: 3rem;
   }
 
   /* .header {
@@ -240,6 +257,7 @@ body {
   } */
 }
 
+/* Large to XL screen sizes */
 @media (min-width: 1200px) {
   body {
     background-color: teal;
