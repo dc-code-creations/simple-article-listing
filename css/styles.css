@@ -35,6 +35,8 @@
 body {
   height: 100vh;
   min-width: 200px;
+  background-color: #F8FAFC;
+  color: black;
 }
 
 .author-info {
@@ -122,6 +124,7 @@ body {
   font-weight: 500;
   font-size: 0.875rem;
   font-style: normal;
+  color: #4D5562;
 }
 
 /* RESPONSIVE STYLES */
