@@ -140,6 +140,21 @@ Toggle Device Toolbar Button in Inspector
     - Here is when the element width is set to 100%
 
         ![screenshot](images/element-width-100-percent.png)
+- testing for performance
+    - https://www.youtube.com/watch?v=eDUMeQX-Mvo&ab_channel=MakeMoneyAnthony (gave me some recommendations on sites to use for testing performance)
+        - https://tools.pingdom.com/
+        - https://pagespeed.web.dev/
+        - https://gtmetrix.com/
+    - found that an element was shifting on my page causing my CLS (Cummulative Layout Shift) score to be a bit too high
+        - The most common causes of a poor CLS are:
+            - Images without dimensions.
+            - Ads, embeds, and iframes without dimensions.
+            - Dynamically injected content such as ads, embeds, and iframes without dimensions.
+            - Web fonts.
+            - source: https://web.dev/articles/optimize-cls#:~:text=The%20most%20common%20causes%20of%20a%20poor%20CLS%20are
+        - due to the ```<hr>``` element that I am pushing an SVG into (https://www.reddit.com/r/webdev/comments/vdhmuw/comment/ickaoaz/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+        - may be due to the image sizes not being specified on the page (https://stackoverflow.com/questions/63372837/why-is-an-embedded-svg-causing-cls-cumulative-layout-shift-on-desktop-but-not)
+        - might just be due to the fonts themselves
 -->
 
 ### What I learned

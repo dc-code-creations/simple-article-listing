@@ -104,6 +104,9 @@ body {
 
 .article-card img {
   border-radius: 10px;
+  /* trying this to see if it decreases CLS */
+  width: 130px;
+  height: 130px;
   max-width: 130px;
   max-height: 130px;
   margin-right: 1rem;
