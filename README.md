@@ -152,9 +152,11 @@ Toggle Device Toolbar Button in Inspector
             - Dynamically injected content such as ads, embeds, and iframes without dimensions.
             - Web fonts.
             - source: https://web.dev/articles/optimize-cls#:~:text=The%20most%20common%20causes%20of%20a%20poor%20CLS%20are
-        - due to the ```<hr>``` element that I am pushing an SVG into (https://www.reddit.com/r/webdev/comments/vdhmuw/comment/ickaoaz/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+        - could be due to the ```<hr>``` element that I am pushing an SVG into (https://www.reddit.com/r/webdev/comments/vdhmuw/comment/ickaoaz/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
         - may be due to the image sizes not being specified on the page (https://stackoverflow.com/questions/63372837/why-is-an-embedded-svg-causing-cls-cumulative-layout-shift-on-desktop-but-not)
         - might just be due to the fonts themselves
+        - looks like it was the image sizes not being specified on the page
+            - CLS went from ~0.8 to ~0 on both mobile and desktop (https://pagespeed.web.dev/analysis/https-simple-article-listing-two-vercel-app/6twj2czff9?form_factor=desktop)
 -->
 
 ### What I learned
