@@ -39,6 +39,11 @@ body {
   color: black;
 }
 
+a {
+  text-decoration: none;
+  display: inline-flex;
+}
+
 .author-info {
   font-size: 14px;
   text-align: center;
@@ -50,8 +55,8 @@ body {
   text-decoration: none;
 }
 
-/* HEADER */
-.header {
+/* PAGE HEADING */
+.page-heading {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -126,6 +131,10 @@ body {
   font-style: normal;
 }
 
+a:visited .article-title {
+  color: black;
+}
+
 .article-date {
   font-family: "Poppins", serif;
   font-weight: 500;
@@ -149,7 +158,7 @@ body {
     /* background-color: pink; */
   }
 
-  .header {
+  .page-heading {
     font-size: 1rem;
   }
 
@@ -183,6 +192,14 @@ x
     /* background-color: purple; */
   }
 
+  ul.articles-list {
+    list-style-type: none;
+  }
+
+  /* a.article-link {
+    color: auto;
+  } */
+
   .article-card img {
     /* border-radius: 10px; */
     /* max-width: 130px; */
@@ -205,7 +222,7 @@ x
     /* background-color: lightblue; */
   }
 
-  .header {
+  .page-heading {
     font-size: 1.15rem;
     padding: 3rem 2rem;
   }
@@ -238,7 +255,7 @@ x
     padding: 0 6rem;
   }
 
-  /* .header {
+  /* .page-heading {
     font-size: 1.15rem;
     padding: 3rem 2rem;
   }

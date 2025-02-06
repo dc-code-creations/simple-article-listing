@@ -157,6 +157,12 @@ Toggle Device Toolbar Button in Inspector
         - might just be due to the fonts themselves
         - looks like it was the image sizes not being specified on the page
             - CLS went from ~0.8 to ~0 on both mobile and desktop (https://pagespeed.web.dev/analysis/https-simple-article-listing-two-vercel-app/6twj2czff9?form_factor=desktop)
+- testing for accessibility
+    - https://www.reddit.com/r/webdev/comments/1blhwjk/how_do_you_test_your_website_for_accessibility/ (goes over why you shouldn't just use tools like Wave)
+    https://dequeuniversity.com/screenreaders/ (learn to use screen readers)
+    https://www.youtube.com/watch?v=cOmehxAU_4s&ab_channel=ChromeforDevelopers (goes through proper ways to test your site for accessibility)
+    - https://www.youtube.com/watch?v=iIoHdxmC8eM&ab_channel=WordPressAccessibilityDay (making my cards accessible)
+        - updated articles list to include ```<ul>```, ```<li>```, and ```<a>``` elements to make page more accessible
 -->
 
 ### What I learned
