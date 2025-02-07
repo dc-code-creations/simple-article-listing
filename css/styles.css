@@ -101,10 +101,15 @@ a {
   background-color: #d9d9d9; 
 }
 
-/* ARTICAL CARDS */
+/* ARTICLE CARDS */
 .article-card {
   display: flex;
   padding: 1rem;
+  border-radius: 10px;
+}
+
+.article-card:hover {
+  transform: scale(1.10);
 }
 
 .article-card img {
