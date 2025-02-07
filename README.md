@@ -63,12 +63,15 @@ What I did:
 - set a min-width on the body at the point where the elements start trying to push past the widest element on the page (using a css debugger extensions helps with this; just click the toggle device toolbar button the in inspector to reset the page once you've added the min-width to the body)
 
 Element Misalignment w/ No Min-Width Defined
+
 ![screenshot](images/element-misalignment.png)
 
 Element Alignment Correction Via Min-Width Definition
+
 ![screenshot](images/element-misalignment-corrected.png)
 
 Toggle Device Toolbar Button in Inspector
+
 ![screenshot](images/toggle-device-toolbar-btn.png)
 
 - figure out how to use an svg as a ```<hr>```; these articles seem to be the most recent and therefore up-to-date:
@@ -205,5 +208,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Author
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
+- Website [https://daracline.gitlab.io/](https://daracline.gitlab.io/)
+- GitHub [@dc-code-creations](https://github.com/dc-code-creations)
