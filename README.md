@@ -159,10 +159,12 @@ Toggle Device Toolbar Button in Inspector
             - CLS went from ~0.8 to ~0 on both mobile and desktop (https://pagespeed.web.dev/analysis/https-simple-article-listing-two-vercel-app/6twj2czff9?form_factor=desktop)
 - testing for accessibility
     - https://www.reddit.com/r/webdev/comments/1blhwjk/how_do_you_test_your_website_for_accessibility/ (goes over why you shouldn't just use tools like Wave)
-    https://dequeuniversity.com/screenreaders/ (learn to use screen readers)
-    https://www.youtube.com/watch?v=cOmehxAU_4s&ab_channel=ChromeforDevelopers (goes through proper ways to test your site for accessibility)
+    - https://dequeuniversity.com/screenreaders/ (learn to use screen readers)
+    - https://www.youtube.com/watch?v=cOmehxAU_4s&ab_channel=ChromeforDevelopers (goes through proper ways to test your site for accessibility)
+        - using VoiceOver on Mac as my screenreader of choice
     - https://www.youtube.com/watch?v=iIoHdxmC8eM&ab_channel=WordPressAccessibilityDay (making my cards accessible)
         - updated articles list to include ```<ul>```, ```<li>```, and ```<a>``` elements to make page more accessible
+- article card widths were not uniform at large tablet screensize; to fill out the remaining spacing of a container when using flex, I added padding to the right side of the element to fill it out; this was the only screensize that still had this problem for some reason
 -->
 
 ### What I learned
