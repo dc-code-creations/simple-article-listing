@@ -46,13 +46,20 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - What have you learned/improved?
 - Your wisdom? :)
 
+-->
+
+The overall visual aspect of this page was relatively easy, so I decided to focus on the accessibility size of things. I focused most of this attention on the ```<hr>``` element since the mock up wanted us to display it as a set of slashes versus your typical horizontal rule. It took some digging to figure out which way worked the best practically and well as for accessibility, but I ended up going with a mask due to its ability to have its color changed dynamically via css classes. I also learned a little bit more about the ```width``` property works in relation to its parent element. I also decided to start by creating the mobile version first and work my way up the screen sizes which is the opposite of what I usually do. I did feel a little different, but not bad, and ultmately makes more sense due to how many people access websites solely from their phones these days, so I will do my best to keep the habit. I took the time to do some simple performance testing was well to make sure my website wasn't running expectionally slow. I did end up adding a hover animation for the article cards just to make it a little nicer. So, for the majority of this project, I was researching how to go about doing these things properly since I have never really done them before as part of my regular routine. I hope to be able to keep up all of these habits in my future projects to ensure our visitors have the best user experience
+
+### What I learned
+
+<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
+
 What I did:
 - started by creating mobile version first, then worked my 
-  way up to larger sizes; found color coding the size I'm working with helps me keep track of which size I'm affecting
-- learn how to use an svg as a horizontal rule/separator
+  way up to larger sizes; found color coding the screen size using a background color while I'm working with helps me keep track of which size I'm affecting
 - decided it's best to use bootstrap breakpoints for screen sizes as a starting point since my natural breakpoints ended up being pretty close to those breakpoints anyway
 - reminder: font sizes are affected by the element's base font size when using rem, so the assigned font size for an ```<h1>``` might be the same as the one for an ```<h3>```, but their physical sizes will be different
-- I need more practice with media queries just so I don't have to go an remind myself how they work everytime
+- I need more practice with media queries to make them more second nature just so I don't have to go an remind myself how they work everytime
 - set a min-width on the body at the point where the elements start trying to push past the widest element on the page (using a css debugger extensions helps with this; just click the toggle device toolbar button the in inspector to reset the page once you've added the min-width to the body)
 
 Element Misalignment w/ No Min-Width Defined
@@ -123,8 +130,8 @@ Toggle Device Toolbar Button in Inspector
 
         https://codepen.io/dc-code-creations/pen/ByBMbGV
 
-    - can't really adjust the color for the first 2 options, so color of the icon will need to be written into the SVG image itself; 3rd option works and is dynamic, but hard to adjust if you have multiple ```<hr>``` elements whose colors all need to be changed at the same time
-    - I like the 4th option best due to the ability to be able to change the color of multiple ```<hr>``` (that are the same color) by changing the color in the css vs on every individual element; even for ```<hr>``` that need to be a different color, there will still be one place to adjust the color itself as long as it has the correct color class added to its class attribute
+    - can't really adjust the color for the first 2 options dynamically, so color of the icon will need to be written into the SVG image itself; 3rd option works and is dynamic, but hard to adjust if you have multiple ```<hr>``` elements whose colors all need to be changed at the same time
+    - I like the 4th option best due to the ability to be able to change the color of multiple ```<hr>``` (that are the same color) by changing the color in the css vs on every individual element; even for ```<hr>``` that needs to be a different color, there will still be one place to adjust the color itself as long as it has the correct color class added to its class attribute
         - tested the functionality of this option on an iPad (both 10th gen and M-chip), MacOS, and an android phone; all of them worked fine with the exception on the 10th gen iPad (on both Chrome and Safari); not sure exactly why that is the case; all I could gather from some googling was that there might be a setting or property that is turned off on iOS that might keep it from running, but no one had quite the same issue I was having; I did manage to run a 10th gen simulator on my MacOS using XCode, and it worked fine on there, so I guessing it was either a fluke or that the browsers needed to be updated
         - source for getting the simulator to work: https://www.youtube.com/watch?v=5DbMomHr5ys&ab_channel=TECHMART
         - can't use isolated padding properties (i.e. things like ```padding-top``` or ```padding-bottom```) with this very as easily since the mask always reposition to be in the center of the container (i.e. the 50% 50% given for the mask position), so it is best to use margins if you want to add space to only one side of the ```<hr>```
@@ -140,6 +147,7 @@ Toggle Device Toolbar Button in Inspector
     - Here is when the element width is set to 100%
 
         ![screenshot](images/element-width-100-percent.png)
+
 - testing for performance
     - https://www.youtube.com/watch?v=eDUMeQX-Mvo&ab_channel=MakeMoneyAnthony (gave me some recommendations on sites to use for testing performance)
         - https://tools.pingdom.com/
@@ -156,7 +164,7 @@ Toggle Device Toolbar Button in Inspector
         - may be due to the image sizes not being specified on the page (https://stackoverflow.com/questions/63372837/why-is-an-embedded-svg-causing-cls-cumulative-layout-shift-on-desktop-but-not)
         - might just be due to the fonts themselves
         - looks like it was the image sizes not being specified on the page
-            - CLS went from ~0.8 to ~0 on both mobile and desktop (https://pagespeed.web.dev/analysis/https-simple-article-listing-two-vercel-app/6twj2czff9?form_factor=desktop)
+            - CLS went from ~0.8 to ~0 on both mobile and desktop after fixing this (https://pagespeed.web.dev/analysis/https-simple-article-listing-two-vercel-app/6twj2czff9?form_factor=desktop)
 - testing for accessibility
     - https://www.reddit.com/r/webdev/comments/1blhwjk/how_do_you_test_your_website_for_accessibility/ (goes over why you shouldn't just use tools like Wave)
     - https://dequeuniversity.com/screenreaders/ (learn to use screen readers)
@@ -165,11 +173,6 @@ Toggle Device Toolbar Button in Inspector
     - https://www.youtube.com/watch?v=iIoHdxmC8eM&ab_channel=WordPressAccessibilityDay (making my cards accessible)
         - updated articles list to include ```<ul>```, ```<li>```, and ```<a>``` elements to make page more accessible
 - article card widths were not uniform at large tablet screensize; to fill out the remaining spacing of a container when using flex, I added padding to the right side of the element to fill it out; this was the only screensize that still had this problem for some reason
--->
-
-### What I learned
-
-<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
 
 ### Useful resources
 
