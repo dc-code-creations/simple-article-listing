@@ -189,13 +189,13 @@ Toggle Device Toolbar Button in Inspector
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+
+- a list of articles that can be clicked (however, they do not redirect to a new page)
+- article cards get slightly larger when hovered over
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
 
