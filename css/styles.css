@@ -134,6 +134,7 @@ a {
   font-weight: 600;
   font-size: 1rem;
   font-style: normal;
+  color: black;
 }
 
 a:visited .article-title {
