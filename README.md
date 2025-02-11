@@ -66,13 +66,16 @@ Element Misalignment w/ No Min-Width Defined
 
 ![screenshot](images/element-misalignment.png)
 
+
 Element Alignment Correction Via Min-Width Definition
 
 ![screenshot](images/element-misalignment-corrected.png)
 
+
 Toggle Device Toolbar Button in Inspector
 
 ![screenshot](images/toggle-device-toolbar-btn.png)
+
 
 - figure out how to use an svg as a ```<hr>```; these articles seem to be the most recent and therefore up-to-date:
     - https://forum.bootstrapstudio.io/t/create-a-hr-with-an-icon-inside/11669 (works but had to remove the 'width: 30px' in the ::after psuedoclass... and make sure I was pointing to the correct file location; can either choose to apply it to ::before and translate backwards or apply it to ::after and translate forwards)
@@ -81,7 +84,9 @@ Toggle Device Toolbar Button in Inspector
     - https://www.shecodes.io/athena/57595-how-to-change-svg-color-with-css#:~:text=How%20to%20change%20svg%20color%3F (can set the color of an svg via the fill property in the rect element of an svg file image or by using the 'rect' selector and modifying the 'fill' property (seems to only work on svgs defined in the html file itself))
         - https://www.reddit.com/r/css/comments/1chvdbg/how_to_colorstyle_a_background_svg/ (using the svg as a background image makes it a static image when in the browser, so there's no way to style it via it's properties)
         - https://codepen.io/sosuke/pen/Pjoqqp (this seems to be a workaround for the background image color issue (likely is necessary when importing the image via content property, as well), but is more effort than it is worth; if you need to change the color of the svg dynamically, seems best to just make it a physical element in the html file if possible)
-        - https://stackoverflow.com/questions/73195948/change-color-fill-of-a-svg-path-when-used-in-the-content-of-a-before-pseudo-el (can literally copy the code from the svg into the -webkit-mask property, give the background property a var() to work with, and then on the element you want to effect, set the variable to the color you want it to be via the style attribute; just make sure to change all the '#' in your color definitions (ex: #D9D9D9) to '%23' (ex: %23D9D9D9) or it won't show up; ex:
+        - https://stackoverflow.com/questions/73195948/change-color-fill-of-a-svg-path-when-used-in-the-content-of-a-before-pseudo-el (can literally copy the code from the svg into the -webkit-mask property, give the background property a var() to work with, and then on the element you want to effect, set the variable to the color you want it to be via the style attribute; just make sure to change all the '#' in your color definitions (ex: #D9D9D9) to '%23' (ex: %23D9D9D9) or it won't show up; 
+        
+        ex:
           ```css    
             /* CCS File */
               div::before {
